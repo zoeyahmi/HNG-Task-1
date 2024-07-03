@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    background: #004aad;
+}
+
+.sidebar {
+    background: #004aad;
+    color: #fff;
+    width: 18%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.home,
+.chats,
+.links {
+    margin: 10px;
+    padding-top: 15px;
+    cursor: pointer;
+    text-align: center;
+    max-width: 90px;
+}
+
+.home:hover,
+.chats:hover,
+.links:hover {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+}
+
+.sidebar p {
+    font-size: 12px;
+}
+
+.icons {
+    font-size: 35px;
+}
+
+.links{
+    position: relative;
+}
+
+.fa-caret-down{
+    position: absolute;
+    bottom: 15px;
+    right: -120px;
+}
+
+.required-links{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.required-links a{
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #dddcdc;
+}
+
+.required-links .bold{
+    font-weight: bold;
+}
+
+.required-links a:hover{
+    text-decoration: underline;
+}
+
+.maincontent{
+    width: 82%;
+    background: #fff;
+    margin-top: 40px;
+    display: flex;
+}
+
+.left{
+    width: 65%;
+    border-right: 1px solid #9e9e9e;
+    border-radius: 4px;
+}
+
+.top{
+    border-bottom: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.top h3{
+    margin-left: 20px;
+}
+
+.content{
+    padding-left: 20px;
+}
+.content h4{
+    font-weight: 600;
+    color: #737373;
+}
+.fa-user{
+    color: #004aad;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.content h3{
+font-weight: bold;
+color: #e70101;
+}
+
+ .content ul li, p{
+    font-size: 14px;
+}
+.bottom{
+    border-top: 1px solid #ccc;
+    position: relative;
+}
+
+.bottom input{
+    border: none;
+    outline: none;
+    background: transparent;
+    margin: 20px;
+}
+
+.fa-paper-plane{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    color: #737373;
+}
+
+.right{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-image{
+    display: block;
+    margin: 50px auto 10px auto;
+}
+
+.my-info{
+    text-align: center;
+    line-height: 0.5;
+}
+
+.status{
+    margin-top: 40px;
+    line-height: 0.3;
+}
+
+.status p{
+    color: #737373;
+}
+
+.other-data{
+    margin: 40px 20px;
+}
+
+.other-data a{
+    text-decoration: none;
+    color: #000;
+}

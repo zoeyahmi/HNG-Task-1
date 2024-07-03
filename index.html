@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f305a0c5ab.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Tech Space</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="home">
+                <i class="fa-solid fa-house icons"></i>
+                <p>Home</p>
+            </div>
+            <div class="chats">
+                <i class="fa-solid fa-message icons"></i>
+                <p>Chats</p>
+            </div>
+            <div class="links">
+                <i class="fa-solid fa-link icons"></i>
+                <i class="fa-solid fa-caret-down"></i>
+                <p>Links</p>
+            </div>
+            <div class="required-links">
+                <div>
+                    <a href="http://hng.tech/learn" data-testid="hngLink" target="_blank" class="bold"><i
+                            class="fa-solid fa-lock"></i> HNG Learn</a>
+                </div>
+                <div>
+                    <a href="http://keyword.dog" data-testid="keywordLink" target="_blank"><i
+                            class="fa-solid fa-hashtag"></i> Keyword Dog</a>
+                </div>
+                <div>
+                    <a href="http://scrapeanyweb.site" data-testid="scrapeanywebLink" target="_blank"><i
+                            class="fa-solid fa-hashtag"></i> Scrape Any Web</a>
+                </div>
+            </div>
+        </div>
+        <div class="maincontent">
+            <div class="left">
+                <div class="top">
+                    <h3><i class="fa-solid fa-hashtag"></i> HNG Learn</h3>
+                </div>
+                <div class="content">
+                    <h4><i class="fa-solid fa-user"></i> Zoe Yahmi</h4>
+                    <h3>MY TECH GOALS FOR NEW 2 YEARS</h3>
+                    <ul>
+                        <li>Enhance my responsive design skills</li><br>
+                        <li>Deepen my understanding of Javascript Frameworks</li><br>
+                        <li>Collaborate and contribute to Open Source Projects</li><br>
+                        <li>Build and tailor my portfolio website to highlight my skills and projects</li><br>
+                        <li>Build connections with mentors and peers for my professional growth</li><br>
+                        <li>Gain foundational knowledge of backend technologies like and databases</li><br>
+                        <li>Apply for positions and start my tech career!</li>
+                    </ul>
+                    <h4><i class="fa-solid fa-user"></i> Team Member</h4>
+                    <p>Brilliant! Hope you achieve them</p>
+                </div>
+                <div class="bottom">
+                    <input type="text" placeholder="Send Message">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </div>
+            </div>
+            <div class="right">
+                <div class="profile-image">
+                    <img src="images/zoe-portrait.png" alt="slack profile picture" data-testid="slackProfilePicture">
+                </div>
+                <div class="my-info">
+                    <h4 data-testid="slackDisplayName">Zoe Yahmi</h4>
+                    <p>Front End Developer</p>
+                    <div class="status">
+                        <h4>Status</h4>
+                        <p class="">👩🏾‍💻 Coding 24/7</p>
+                    </div> 
+                </div>
+                <div class="other-data">
+                    <div class="time">
+                        <i class="fa-regular fa-clock"></i>
+                        <span data-testid="CurrentDay" id="CurrentDay">Wednesday</span> <span data-testid="CurrentTimeUTC" id="CurrentTimeUTC">11:00pm UTC</span>
+                    </div>
+                    <div class="mail">
+                        <i class="fa-regular fa-envelope"></i>
+                        <a href="mailto:darlingtonzoeyahmi@gmail.com">darlingtonzoeyahmi@gmail.com</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
