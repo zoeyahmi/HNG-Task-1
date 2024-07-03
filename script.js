@@ -1,18 +1,20 @@
-function displayTimeAndDay(){
-    const time = document.getElementById("currentTimeUTC");
-    const day = document.getElementById("currentDay");
+function displayTimeAndDay() {
+    const currentTime = document.getElementById("currentTimeUTC");
+    const currentDay = document.getElementById("currentDay");
+    const date = new Date();
 
     const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    day.innerHTML = days[new Date().getUTCDay()]
-    
-const hours = String(new Date().getUTCHours()).padStart(2, '0');
-const minutes = String(new Date().getUTCMinutes()).padStart(2, '0');
-const suffix = hours >= 12? 'pm': 'am';
-const currentTime = `${(hours %12) ||12}:${minutes}${suffix} UTC`;
-time.innerHTML = currentTime;
+    currentDay.innerHTML = days[date.getUTCDay()]
+
+    const hours = date.getUTCHours();
+    const minutes = date.getUTCMinutes();
+    const seconds = date.getUTCSeconds();
+    const time = `${hours}:${minutes}:${seconds} UTC`;
+    currentTime.innerHTML = time;
 }
 
-document.addEventListener('DOMContentLoaded', () =>{
+document.addEventListener('DOMContentLoaded', () => {
     displayTimeAndDay();
-    setInterval(displayTimeAndDay, 60000)
- })
+    setInterval(displayTimeAndDay, 1000)
+})
+
