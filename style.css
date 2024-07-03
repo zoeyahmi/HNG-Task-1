@@ -175,3 +175,7 @@ color: #e70101;
     text-decoration: none;
     color: #000;
 }
+
+#currentDay{
+    font-weight: 600;
+}
